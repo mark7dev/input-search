@@ -1,0 +1,34 @@
+.search__container {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search__box {
+    margin: 0 auto;
+}
+
+.results__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.issue__searched__box {
+    border: 1px solid gray;
+    font-size: small;
+    font-weight: lighter;
+    padding: 3px;
+    width: 50%;
+    transition: transform .3s;
+}
+
+.active {
+    font-size: small;
+    padding: 3px;
+    width: 50%;
+    border: 1px solid rgb(194, 87, 190);
+    background: rgb(255, 228, 254);
+    transform: scale(1.07);
+    border-radius: 10px;
+}

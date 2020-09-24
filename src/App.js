@@ -36,7 +36,10 @@ function App() {
           {loading ? 
             <Spinner /> :
             <div>
-              <Search />
+              <Search 
+                issuesData={issuesData}
+                setIssuesSearch={setIssuesSearch}
+              />
               <List  
                 issuesData={issuesData}
                 issuesSearch={issuesSearch}
