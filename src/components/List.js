@@ -4,10 +4,12 @@ import './styles/List.css';
 
 const List = ({ issuesData, issuesSearch }) => {
 
-    const colorStyle = (labelColor) => {
-        let color = `#${labelColor}`;
-        return color
-    }
+    // const colorStyle = labelColor => {
+    //     let color = `#${labelColor}`;
+    //     return color
+    // }
+
+    const colorStyle = labelColor => `#${labelColor}`;
 
     return ( 
         <div className="issues__container">
