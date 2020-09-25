@@ -62,9 +62,7 @@ const Search = ({issuesData, setIssuesSearch}) => {
                     onBlur={onBlurInput}
                     onFocus={onFocusInput}
                 />
-                <button>
-                    <i className="fa fa-search" aria-hidden="true"></i>
-                </button>
+                <i className="fa fa-search iconSearch" aria-hidden="true"></i>
             </div>
             {issueInput && showResults ?
             <div className="results__box">

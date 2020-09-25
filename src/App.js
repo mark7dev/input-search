@@ -12,6 +12,10 @@ function App() {
   const [ loading, setLoading ] = useState(true);
   const [ error, setError ] = useState(false);
 
+  const getAllIssues = () => {
+    setIssuesSearch(issuesData);
+  }
+
   useEffect(() => {
     setLoading(true);
     setError(false);
@@ -36,6 +40,13 @@ function App() {
           {loading ? 
             <Spinner /> :
             <div>
+              <div className="total__container">
+                <button
+                  className="get__btn" 
+                  onClick={getAllIssues}
+                  disabled={issuesSearch.length === issuesData.length ? true : false}
+                >See all issues</button>
+              </div>
               <Search 
                 issuesData={issuesData}
                 setIssuesSearch={setIssuesSearch}
