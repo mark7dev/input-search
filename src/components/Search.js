@@ -19,24 +19,18 @@ const Search = ({issuesData, setIssuesSearch}) => {
     }
 
     const onKeyDown = e => {
-        console.log(activeIssue);
         if(e.keyCode === 13) {
-            console.log('13 ENTER');
             setActiveIssue(0);
             setIssueInput('');
             setShowResults(false);
             setIssuesSearch([filteredIssues[activeIssue]]);
-            console.log(issueInput);
         } else if(e.keyCode === 38) {
-            console.log('UP!');
             if(activeIssue === 0) {
                 return;
             }
             setActiveIssue(activeIssue-1);
         } else if(e.keyCode === 40) {
-            console.log('DOWN!');
             if(activeIssue === filteredIssues.length -1) {
-                console.log(activeIssue);
                 return;
             }
             setActiveIssue(activeIssue+1);

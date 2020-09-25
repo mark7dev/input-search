@@ -82,4 +82,8 @@ a:link, a:visited, a:active {
     .comments {
         width: 20%;
     }
+
+    .title__issue {
+        font-size: small;
+    }
 }

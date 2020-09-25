@@ -1,0 +1,14 @@
+.header__container {
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: black;
+    align-items: center;
+}
+
+.githubIcon {
+    font-size: xx-large;
+    margin-left: 10px;
+}

@@ -17,7 +17,7 @@ const List = ({ issuesData, issuesSearch }) => {
                     <div className="info__container">
                         <div className="warning__container">
                             <i className="fa fa-exclamation-circle warning" aria-hidden="true"></i>
-                                <h4>
+                                <h4 className="title__issue">
                                     <a href={issue.html_url} target="_blank" rel="noopener noreferrer">{issue.title}</a>
                                 </h4>
                         </div>

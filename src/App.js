@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Header from './components/Header';
 import Search from './components/Search';
 import Spinner from './components/Spinner';
 import List from './components/List';
@@ -40,7 +41,8 @@ function App() {
           {loading ? 
             <Spinner /> :
             <div>
-              <div className="total__container">
+              <Header />
+              <div className="btn__container">
                 <button
                   className="get__btn" 
                   onClick={getAllIssues}
